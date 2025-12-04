@@ -59,24 +59,24 @@ export default function BentoGrid() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 5, type: 'spring' }}
             whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-            className='col-span-3 row-span-5 p-4 text-[#2cde73] bg-[#040D12] rounded-3xl flex flex-col justify-between items-center text-center '>
+            className='col-span-3 row-span-5 p-4 text-[#2cde73] bg-primary-dark rounded-3xl flex flex-col justify-between items-center text-center '>
                 <img className='[mask-image:linear-gradient(black_70%,transparent)] h-[70%]' src={meImg} alt='Andres Perdomo'/>
                 <h3 className='text-4xl font-shadow font-bold bg-linear-to-r from-[#93B1A6] to-[#2cde73] bg-clip-text text-transparent '>Andres Perdomo</h3>
                 <h1 className='text-xl font-semibold font-shadow '>Frontend Developer</h1>
             </motion.div>
-            <GridItem className='col-span-3 row-span-8 bg-[#040D12] flex justify-center items-center flex-col'>
+            <GridItem className='col-span-3 row-span-8 bg-primary-dark flex justify-center items-center flex-col'>
                 <div className='flex justify-between  w-full my-3'>
                     <Title >Components</Title> 
                     <motion.i className="fa-solid fa-tablet-screen-button text-[#2cde73] text-3xl"></motion.i>
                 </div>
                  <ComponentsLibrary />
             </GridItem>
-            <GridItem className='col-span-3 row-span-4 bg-[#040D12] flex justify-center items-center'>
+            <GridItem className='col-span-3 row-span-4 bg-primary-dark flex justify-center items-center'>
                 <Title>Hobbies</Title>
                 <i className="fa-solid fa-gamepad text-[#2cde73] text-3xl"></i>
             </GridItem>
             <GridItem className='col-span-4 row-span-4 font-patrick bg-[#5C8374] flex justify-center items-center flex-col'>
-                <h3 className='font-bold text-center text-xl text-[#040D12] '>Do you need a website, an app, or AI to do the work no one else wants to do?</h3>
+                <h3 className='font-bold text-center text-xl text-primary-dark '>Do you need a website, an app, or AI to do the work no one else wants to do?</h3>
                 <p>Perfect, because that's exactly what I do while you focus on… whatever it is you're doing.</p>
                 <p>Contact me and let's build something that works so well it seems like magic <span className='font-semibold'>(or luck, but just say it was me)</span>.</p>
 
@@ -85,7 +85,7 @@ export default function BentoGrid() {
 
                 <h2 className='font-shadow text-5xl bg-linear-to-r from-[#b1ffb5] to-[#03d430] bg-clip-text text-transparent'>Contact me!</h2>
             </GridItem>
-            <GridItem className='col-span-3 row-span- bg-[#040D12] flex justify-center items-center gap-5 '>
+            <GridItem className='col-span-3 row-span- bg-primary-dark flex justify-center items-center gap-5 '>
                 <i className="fa-brands fa-linkedin text-[#2cde73] text-3xl"></i>
                 <i className="fa-brands fa-github text-[#2cde73] text-3xl"></i>
                 <i className="fa-brands fa-youtube text-[#2cde73] text-3xl"></i>

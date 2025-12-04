@@ -35,23 +35,19 @@ export default function Modal({children, title }) {
 
             {/* Modal */}
             <motion.div
-                className="fixed top-1/2 left-1/2 z-50 w-[90%] -translate-x-1/2 -translate-y-1/2 
+                className="fixed top-1/2 left-1/2 z-50 w-[90%] h-[90%] -translate-x-1/2 -translate-y-1/2 
                         bg-white rounded-2xl p-6 shadow-xl"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
                 transition={{type: "spring", stiffness: 500}}
             >
-                
-                <div className="grid grid-cols-10">
-                    <h3 className="text-2xl col-span-9 text-center font-mono ">{title}</h3>
                     <div className="flex  justify-end ">
                         <button
                             onClick={()=>closeModal()}
                             className="flex justify-center items-center   w-7 h-7 bg-green-500 text-white  rounded-full hover:bg-green-600" 
                             >X</button>
                     </div>
-                </div>
                 
                 {children}
             </motion.div>

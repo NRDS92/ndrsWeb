@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 
-export default function ListItem({ title, onClick }) {
+export default function ListItem({ title, onClick, name }) {
     return (
         <motion.li
         className="w-full font-patrick md:text-2xl pb-1 cursor-pointer relative"
         initial="rest"
         whileHover="hover"
         onClick={onClick}
+        name={name}
         >
         {title}
 

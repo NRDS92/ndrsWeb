@@ -2,54 +2,13 @@
 @import "tailwindcss";
 
 
-@layer utilities {
-  .font-caveat { font-family: "Caveat", cursive; }
-  .font-mono { font-family: "Momo Signature", cursive; }
-  .font-patrick { font-family: "Patrick Hand", cursive; }
-  .font-shadow { font-family: "Shadows Into Light", cursive; }
-  
-}
+@theme {
+  --color-primary-dark: #040D12;
+  --color-secondary: #9333EA;
+  --color-accent: #F59E0B;
 
-/*  BUTTONS  */
-.btn {
-  width: 15rem;
-  height: 4rem;
-  border-radius: 1rem;
-  box-shadow: .3rem .3rem .6rem var(--greyLight-2),;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: .3s ease;
-
-  &__primary {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    background: var(--primary);
-    box-shadow:inset .2rem .2rem 1rem var(--primary-light), 
-              inset -.2rem -.2rem 1rem var(--primary-dark),
-              .3rem .3rem .6rem var(--greyLight-2),;
-    color: var(--greyLight-1);
-
-    &:hover { color: var(--white); }
-    &:active {
-      box-shadow:inset .2rem .2rem 1rem var(--primary-dark), 
-            inset -.2rem -.2rem 1rem var(--primary-light);
-    }
-  }
-
-  &__secondary {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-    color: var(--greyDark);
-    &:hover { color: var(--primary); }
-    &:active {
-      box-shadow: inset .2rem .2rem .5rem var(--greyLight-2);
-    }
-  }
-
-  p { 
-    font-size: 1.6rem;
-  }
+  --font-caveat: "Caveat", cursive;
+  --font-mono: "Momo Signature", cursive;
+  --font-patrick: "Patrick Hand", cursive;
+  --font-shadow: "Shadows Into Light", cursive;
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-export default function GridItem({ className, children }) {
+export default function GridItem({ className, children, onClick  }) {
   return (
     <motion.div
+    onClick={onClick}
     className={`p-6 ${className} rounded-3xl`}
     initial={{ opacity: 0, scale: 0.95, x:-50 }}
     animate={{ opacity: 1, scale: 1, x: 0 }}
